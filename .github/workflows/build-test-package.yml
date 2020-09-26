@@ -19,7 +19,7 @@ jobs:
             c-compiler: "cl.exe"
             cxx-compiler: "cl.exe"
             itk-git-tag: "v5.1.1"
-            cmake-build-type: "Release"
+            cmake-build-type: "Debug"
           - os: macos-10.15
             c-compiler: "clang"
             cxx-compiler: "clang++"
@@ -90,7 +90,7 @@ jobs:
         set(CTEST_BUILD_NAME "${GITHUB_REPOSITORY}-${operating_system}-\${branch}")
         set(CTEST_UPDATE_VERSION_ONLY 1)
         set(CTEST_TEST_ARGS \${CTEST_TEST_ARGS} PARALLEL_LEVEL \${PARALLEL_LEVEL})
-        set(CTEST_BUILD_CONFIGURATION "Release")
+        set(CTEST_BUILD_CONFIGURATION "Debug")
         set(CTEST_CMAKE_GENERATOR "Ninja")
         set(CTEST_CUSTOM_WARNING_EXCEPTION
           \${CTEST_CUSTOM_WARNING_EXCEPTION}
