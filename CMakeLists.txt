@@ -40,8 +40,9 @@ set(_itk_build_testing ${BUILD_TESTING})
 set(_itk_build_shared ${BUILD_SHARED_LIBS})
 set(BUILD_SHARED_LIBS OFF)
 set(elastix_GIT_REPOSITORY "https://github.com/SuperElastix/elastix.git")
-# Tag of commit "COMP: Quick-fix ITKElastix error: 'itkCostFunction.h' file not found"
-set(elastix_GIT_TAG "14649fe068c1294d734efc740cc8dda867b7d283")
+# Tag of commit "ENH: Elastix library should read the initial transform from file"
+# from https://github.com/SuperElastix/elastix/pull/319
+set(elastix_GIT_TAG "304837359a7ed55d3f3beedbd757f739c7af562a")
 FetchContent_Declare(
   elx
   GIT_REPOSITORY ${elastix_GIT_REPOSITORY}
