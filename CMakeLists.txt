@@ -40,8 +40,8 @@ set(_itk_build_testing ${BUILD_TESTING})
 set(_itk_build_shared ${BUILD_SHARED_LIBS})
 set(BUILD_SHARED_LIBS OFF)
 set(elastix_GIT_REPOSITORY "https://github.com/SuperElastix/elastix.git")
-# Tag of commit "COMP: Quick-fix ITKElastix error: 'itkCostFunction.h' file not found"
-set(elastix_GIT_TAG "14649fe068c1294d734efc740cc8dda867b7d283")
+# Tag of commit "BUG: Use xoutManager (6 x) to make sure the output streams are closed"
+set(elastix_GIT_TAG "7fc5a6093d59ffd68fd65c53cd1a825ee880f0ee")
 FetchContent_Declare(
   elx
   GIT_REPOSITORY ${elastix_GIT_REPOSITORY}
