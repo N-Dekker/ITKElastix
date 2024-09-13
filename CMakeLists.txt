@@ -59,11 +59,9 @@ if(WASI OR EMSCRIPTEN)
   option(ELASTIX_NO_INSTALL_EXECUTABLES "Do not install executables" ON)
 endif()
 
-# set(elastix_GIT_REPOSITORY "https://github.com/SuperElastix/elastix.git")
-set(elastix_GIT_REPOSITORY "https://github.com/thewtex/elastix.git")
-# Upstream + wasm patches
-# Branch: ITKElastix-2024-07-18-ebb429a33b
-set(elastix_GIT_TAG "0ab3f57a6528cce609feedeb1650e7c850beca94")
+set(elastix_GIT_REPOSITORY "https://github.com/SuperElastix/elastix.git")
+# Branch: Add-landmark-support-to-library "ENH: Add SetFixedPoints and SetMovingPoints to ElastixRegistrationMethod"
+set(elastix_GIT_TAG "6d7a064a9d1b4a9b6bd72848f2e36eacc668b2d5")
 FetchContent_Declare(
   elx
   GIT_REPOSITORY ${elastix_GIT_REPOSITORY}
