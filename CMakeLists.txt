@@ -60,8 +60,8 @@ if(WASI OR EMSCRIPTEN)
 endif()
 
 set(elastix_GIT_REPOSITORY "https://github.com/SuperElastix/elastix.git")
-# Branch: WIP-Add-landmark-support-to-library WIP: SetMovingPointsByVector 
-set(elastix_GIT_TAG "847c16baa4dfbe602f2c0aabfb88942548b6423f")
+# Branch: WIP-Add-landmark-support-to-library WIP: Add SetMovingPointsByVectorOfCoordinatesByValue 
+set(elastix_GIT_TAG "16f8a81d8c2d70f957ac857fdec7f1023253ae18")
 FetchContent_Declare(
   elx
   GIT_REPOSITORY ${elastix_GIT_REPOSITORY}
